@@ -3,6 +3,8 @@ package com.example.yuselenin.trainingaplicationandroid;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class MainActivityFragment extends FragmentActivity
         implements HeadlinesFragment.OnHeadlineSelectedListener {

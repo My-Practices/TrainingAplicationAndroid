@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.yuselenin.menu2.MainActivity">
+    tools:context="com.example.yuselenin.TrainingAplicationAndroid.MainActivity">
     <item
         android:id="@+id/action_favorite"
         android:icon="@drawable/ic_favorite_black_48dp"

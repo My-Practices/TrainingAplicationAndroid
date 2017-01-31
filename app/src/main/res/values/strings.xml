@@ -4,4 +4,7 @@
     <string name="button_send">Send</string>
     <string name="action_settings">Settings</string>
     <string name="action_favorite">Favorite</string>
+    <string name="MainActivityFragmentTitle">My Fragment</string>
+    <string name="DisplayMessageActivityTile">My message</string>
+
 </resources>
