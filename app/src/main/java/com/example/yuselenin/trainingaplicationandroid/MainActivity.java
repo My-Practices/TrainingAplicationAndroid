@@ -1,7 +1,10 @@
 package com.example.yuselenin.trainingaplicationandroid;
 
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.ShareActionProvider;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,7 +33,24 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView =
+                (SearchView) MenuItemCompat.getActionView(searchItem);
+
+        // Configure the search info and add any event listeners...
+        //=================================================================
+        //REVISAR
+        //=================================================================
+        //https://developer.android.com/training/appbar/action-views.html
+        MenuItem shareItem = menu.findItem(R.id.action_share);
+        ShareActionProvider myShareActionProvider =
+                (ShareActionProvider) MenuItemCompat.getActionProvider(shareItem);
+        Intent myShareIntent = new Intent(Intent.ACTION_SEND);
+        myShareIntent.setType("text/plain");
+        myShareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Hello world!!");
+        myShareActionProvider.setShareIntent(myShareIntent);
+
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -42,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_favorite:
                 return true;
 
+            case R.id.action_search:
+                return true;
+
+            case R.id.action_share:
+                return true;
             default:
                 // If we got here, the user's action was not recognized.
                 // Invoke the superclass to handle it.

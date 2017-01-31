@@ -6,5 +6,7 @@
     <string name="action_favorite">Favorite</string>
     <string name="MainActivityFragmentTitle">My Fragment</string>
     <string name="DisplayMessageActivityTile">My message</string>
+    <string name="search">Search</string>
+    <string name="share">Share</string>
 
 </resources>
