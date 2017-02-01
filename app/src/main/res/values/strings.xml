@@ -8,5 +8,30 @@
     <string name="DisplayMessageActivityTile">My message</string>
     <string name="search">Search</string>
     <string name="share">Share</string>
-
+    <string name="pref_sync">Share</string>
+    <string name="pref_sync_summ">Share</string>
+    <string name="pref_syncConnectionType">Share</string>
+    <string name="pref_syncConnectionTypes_default">Share</string>
+    <string name="pref_sms_storage_title">Share</string>
+    <string name="pref_summary_auto_delete">Share</string>
+    <string name="pref_title_auto_delete">Share</string>
+    <string name="pref_summary_delete_limit">Share</string>
+    <string name="pref_title_sms_delete">Share</string>
+    <string name="pref_title_mms_delete">Share</string>
+    <string name="voicemail">Share</string>
+    <string name="voicemail_provider">Share</string>
+    <string name="voicemail_settings">Share</string>
+    <string name="voicemail_ringtone_title">Share</string>
+    <string-array name="pref_syncConnectionTypes_entries">
+        <item>Big Buck Bunny</item>
+        <item>Elephants Dream</item>
+        <item>Sintel</item>
+        <item>Tears of Steel</item>
+    </string-array>
+    <string-array name="pref_syncConnectionTypes_values">
+        <item>Big Buck Bunny</item>
+        <item>Elephants Dream</item>
+        <item>Sintel</item>
+        <item>Tears of Steel</item>
+    </string-array>
 </resources>
